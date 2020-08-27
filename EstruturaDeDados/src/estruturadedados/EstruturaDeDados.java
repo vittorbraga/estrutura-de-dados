@@ -31,7 +31,7 @@ public class EstruturaDeDados {
         array[7] = null;
         array[8] = null;*/
         
-        Stack pilha = new Stack();
+        /*Stack pilha = new Stack();
         pilha.push(10);
         pilha.push(15);
         pilha.push(8);
@@ -47,6 +47,20 @@ public class EstruturaDeDados {
         System.out.println(pilha.pop());
         System.out.println(pilha.peek());
         System.out.println("-------------------------------------");
-        pilha.ToString();
+        pilha.ToString();*/
+        
+        Stack pilha = new Stack(); 
+        int decimal = 12345;
+        int resto = decimal;
+        while(resto > 0) {
+            pilha.push(resto%2);
+            resto = resto/2;
+        }
+        String retorno = "";
+        while(pilha.size() > 0) {
+            retorno = retorno + pilha.pop();
+        }
+        System.out.println("Decimal: "+decimal+" binário: "+retorno);
+        System.out.println("Capacidade: "+pilha.getCapacity());
     }   
 }
