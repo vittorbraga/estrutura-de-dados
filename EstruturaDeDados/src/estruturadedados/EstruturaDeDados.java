@@ -49,7 +49,7 @@ public class EstruturaDeDados {
         System.out.println("-------------------------------------");
         pilha.ToString();*/
         
-        Stack pilha = new Stack(); 
+        /*Stack pilha = new Stack(); 
         int decimal = 12345;
         int resto = decimal;
         while(resto > 0) {
@@ -61,6 +61,25 @@ public class EstruturaDeDados {
             retorno = retorno + pilha.pop();
         }
         System.out.println("Decimal: "+decimal+" binário: "+retorno);
-        System.out.println("Capacidade: "+pilha.getCapacity());
+        System.out.println("Capacidade: "+pilha.getCapacity());*/
+        
+        /*Queue fila = new Queue();
+        fila.enqueue(234);
+        fila.enqueue(456);
+        fila.enqueue(25);
+        fila.enqueue(474);
+        System.out.println(fila.dequeue());
+        fila.ToString();*/
+        
+        Deque deque = new Deque();
+        deque.enqueue(234);
+        deque.enqueue(456);
+        //deque.addFront(999);
+        deque.enqueue(999);
+        deque.removeBack();
+        deque.enqueue(765);
+        deque.ToString();
+        
+        
     }   
 }
