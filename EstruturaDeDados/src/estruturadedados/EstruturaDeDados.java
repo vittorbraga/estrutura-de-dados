@@ -71,15 +71,52 @@ public class EstruturaDeDados {
         System.out.println(fila.dequeue());
         fila.ToString();*/
         
-        Deque deque = new Deque();
+        /*Deque deque = new Deque();
         deque.enqueue(234);
         deque.enqueue(456);
         //deque.addFront(999);
         deque.enqueue(999);
         deque.removeBack();
         deque.enqueue(765);
-        deque.ToString();
+        deque.ToString();*/
         
+        /*
+        // Resultado e a variavel que retorna se a string e ou nao um palindromo
+        String resultado = "É um palindromo";
+        // e a string que queremos saber se e um palindromo
+        String palindromo = "02022020";
+        // declarando e instanciando a nossa fila
+        Queue fila = new Queue();
+        // a funcao toCharArray quebra a string em um array de char
+        // [0, 2, 0, 2, 2, 0, 2, 0]
+        char[] ch = palindromo.toCharArray();
+        // Faz um loop para adicionar os elementos da string na nossa fila
+        for(int i=0; i<ch.length; i++) {
+            // os comandos Integer.parseInt e String.valueOf
+            // sao apenas para converter do tipo char para o tipo int
+            fila.enqueue( Integer.parseInt( String.valueOf( ch[i] ) ) );
+        }
+        // agora fazemos um for iniciando do ultimo index o array ch
+        // ate o primeiro indice
+        for(int i=ch.length-1; i>=0; i--){
+            // Integer.parseInt(String.valueOf(ch[i])) -> e o item do array ch iniciando 
+            // do fim para o inicio
+            // fila.dequeue() -> e o desenfileiramento da nossa fila, ou seja
+            // o elemento que foi inserido primeiro vai sair primeiro
+            // se os valores forem diferentes, e descobrimos que a string nao e um palindromo
+            if( Integer.parseInt(String.valueOf(ch[i])) != fila.dequeue() ) {
+                resultado = "Não é uma palindromo";
+                break;
+            }
+        }
+        // printar o resultado
+        System.out.println(resultado);*/
         
+        LinkedList list = new LinkedList();
+        list.push(987);
+        list.push(8);
+        list.push(75);
+        list.push(27);
+        list.push(234);        
     }   
 }
