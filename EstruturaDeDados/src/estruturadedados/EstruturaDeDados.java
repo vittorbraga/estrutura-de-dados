@@ -117,6 +117,9 @@ public class EstruturaDeDados {
         list.push(8);
         list.push(75);
         list.push(27);
-        list.push(234);        
+        list.push(234);
+        // list.removeAt(2);
+        // list.remove(75);
+        System.out.println(list.ToString());
     }   
 }
