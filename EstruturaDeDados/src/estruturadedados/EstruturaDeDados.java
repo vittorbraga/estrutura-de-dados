@@ -112,7 +112,7 @@ public class EstruturaDeDados {
         // printar o resultado
         System.out.println(resultado);*/
         
-        LinkedList list = new LinkedList();
+        /*LinkedList list = new LinkedList();
         list.push(987);
         list.push(8);
         list.push(75);
@@ -120,6 +120,13 @@ public class EstruturaDeDados {
         list.push(234);
         // list.removeAt(2);
         // list.remove(75);
-        System.out.println(list.ToString());
+        System.out.println(list.ToString());*/
+        System.out.println(Fibonacci(6)+"");
     }   
+    
+    public static int Fibonacci(int n) {
+        if(n < 1) return 0;
+        if(n <= 2) return 1;
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
+    }
 }
