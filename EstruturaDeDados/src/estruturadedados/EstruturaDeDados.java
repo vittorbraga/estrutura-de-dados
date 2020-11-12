@@ -139,8 +139,10 @@ public class EstruturaDeDados {
         bst.insert(20);
         bst.insert(18);
         bst.insert(25);
+        bst.insert(6);
         //bst.inOrderTraverse();
-        bst.postOrderTraverse();
+        //bst.postOrderTraverse();
+        bst.remove(15);
     }   
     
     public static int Fibonacci(int n) {
