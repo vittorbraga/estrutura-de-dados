@@ -124,7 +124,7 @@ public class EstruturaDeDados {
         System.out.println(list.ToString());*/
         // System.out.println(Fibonacci(6)+"");
         
-        BinaryTree bst = new BinaryTree();
+        /*BinaryTree bst = new BinaryTree();
         bst.insert(11);
         bst.insert(7);
         bst.insert(15);
@@ -142,7 +142,23 @@ public class EstruturaDeDados {
         bst.insert(6);
         //bst.inOrderTraverse();
         //bst.postOrderTraverse();
-        bst.remove(15);
+        bst.remove(15);*/
+        
+        Graph grafo = new Graph();
+        grafo.addEdge("A", "B");
+        grafo.addEdge("A", "C");
+        grafo.addEdge("A", "D");
+        grafo.addEdge("C", "D");
+        grafo.addEdge("C", "G");
+        grafo.addEdge("D", "G");
+        grafo.addEdge("D", "H");
+        grafo.addEdge("B", "E");
+        grafo.addEdge("B", "F");
+        grafo.addEdge("E", "I");
+        //System.out.println(grafo.ToString());
+        //grafo.breadthFirstSearch();
+        //grafo.BFS("I");
+        grafo.depthFirstSearch();
     }   
     
     public static int Fibonacci(int n) {
@@ -150,4 +166,5 @@ public class EstruturaDeDados {
         if(n <= 2) return 1;
         return Fibonacci(n - 1) + Fibonacci(n - 2);
     }
+    
 }

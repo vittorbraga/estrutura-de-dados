@@ -13,13 +13,13 @@ import java.util.Arrays;
  */
 public class Queue {
     final int INITIAL_CAPACITY = 10;
-    int data[];
+    String data[];
     int manyItems;
     int front;
     int rear;
     
     public Queue() {
-        data = new int[INITIAL_CAPACITY];
+        data = new String[INITIAL_CAPACITY];
         front = 0;
         rear = 0;
         manyItems = 0;
@@ -36,13 +36,13 @@ public class Queue {
         // verificar fila está vazia, se tiver vazia
         // aumenta a capacidade solicitada
         }else if(manyItems == 0) {
-            data = new int[capacity];
+            data = new String[capacity];
         // verificar se a posicao final é maior do que a 
         // posicao inicial..
         // ex: elemento mais antigo na posicao 1 do array
         // e o elemento mais novo está na posicao 4 do array
         }else if(front <= rear) {
-            int[] arrayMaior = new int[capacity];
+            String[] arrayMaior = new String[capacity];
             System.arraycopy(data, front, arrayMaior, front, manyItems);
             data = arrayMaior;
         // entende-se que a posicao final é menor do que a posicao inicial
@@ -50,7 +50,7 @@ public class Queue {
         // e o elemento mais novo está na posicao 0 do array
         // a copia dos elementos precisa manter a ordem de chegada da fila
         }else {
-            int[] arrayMaior = new int[capacity];
+            String[] arrayMaior = new String[capacity];
             int n1 = data.length - front;
             int n2 = rear + 1;
             // copia os elementos mais antigos da fila porém mais
@@ -64,7 +64,7 @@ public class Queue {
         }
     }
     
-    public void enqueue(int element) {
+    public void enqueue(String element) {
         // se a capacidade da filar estiver esgotada
         // a gente pede para aumentar a capacidade
         if(manyItems == data.length) {
@@ -92,9 +92,9 @@ public class Queue {
         manyItems++;
     }
     
-    public int dequeue() {
+    public String dequeue() {
         // variavel pra armazenar o valor de retorno
-        int resposta = 0;
+        String resposta = "";
         // so conseguimos remover um elemento se tivermos elemento na fila
         if(manyItems > 0) {
             // armazena o valor que estamos removendo na variavel resposta
@@ -114,8 +114,8 @@ public class Queue {
         return resposta;
     }
     
-    public int peek() {
-        int resposta = 0;
+    public String peek() {
+        String resposta = "";
         if(manyItems > 0) {
             resposta = data[front];
         }
@@ -127,7 +127,7 @@ public class Queue {
     }
     
     public void clear() {
-        data = new int[INITIAL_CAPACITY];
+        data = new String[INITIAL_CAPACITY];
         front = 0;
         rear = 0;
         manyItems = 0;
