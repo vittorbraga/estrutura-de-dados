@@ -32,4 +32,5 @@ public class EstruturaDeDados {
             System.out.println("Dia: " + diasDaSemana[i]);
         }
     }
+
 }
