@@ -3,6 +3,7 @@ package estruturadedados;
 public class EstruturaDeDados {
     public static void main(String[] args) {
         // TODO code application logic here
+        /*
         String[] diasDaSemana = new String[5];
         diasDaSemana[0] = "Segunda";
         diasDaSemana[1] = "Teca";
@@ -31,6 +32,26 @@ public class EstruturaDeDados {
         for(int i=0; i<diasDaSemana.length; i++) {
             System.out.println("Dia: " + diasDaSemana[i]);
         }
+        
+        // Exemplo classe
+        Pessoa p = new Pessoa();
+        p.nome = "Vitor";
+        p.sobrenome = "Braga";
+        p.idade = 29;
+        System.out.println(p.nomeCompleto());
+        */
+        Stack pilha = new Stack();
+        pilha.push(82);
+        pilha.push(95);
+        pilha.push(57);
+        System.out.println(pilha.peek());
+        pilha.push(23);
+        System.out.println(pilha.peek());
+        pilha.pop();
+        System.out.println(pilha.peek());
+        System.out.println(pilha.toString());
+        
+        System.out.println("fim");
     }
 
 }
