@@ -40,7 +40,7 @@ public class EstruturaDeDados {
         p.idade = 29;
         System.out.println(p.nomeCompleto());
         */
-        Stack pilha = new Stack();
+        /*Stack pilha = new Stack();
         pilha.push(82);
         pilha.push(95);
         pilha.push(57);
@@ -51,7 +51,18 @@ public class EstruturaDeDados {
         System.out.println(pilha.peek());
         System.out.println(pilha.toString());
         
-        System.out.println("fim");
+        System.out.println("fim");*/
+        
+        Stack pilha = new Stack();
+        int decimal = 70;
+        while(decimal > 0) {
+            pilha.push(decimal % 2);
+            decimal = decimal / 2;
+        }
+        System.out.println(pilha.toString());
+        while (!pilha.isEmpty()) {
+            System.out.print(pilha.pop());
+        }
     }
 
 }
