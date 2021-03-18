@@ -62,7 +62,7 @@ public class EstruturaDeDados {
         System.out.println(pilha.toString());
         while (!pilha.isEmpty()) {
             System.out.print(pilha.pop());
-        }
+        } 
     }
 
 }
