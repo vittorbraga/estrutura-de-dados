@@ -53,7 +53,7 @@ public class EstruturaDeDados {
         
         System.out.println("fim");*/
         
-        Stack pilha = new Stack();
+        /*Stack pilha = new Stack();
         int decimal = 70;
         while(decimal > 0) {
             pilha.push(decimal % 2);
@@ -62,7 +62,9 @@ public class EstruturaDeDados {
         System.out.println(pilha.toString());
         while (!pilha.isEmpty()) {
             System.out.print(pilha.pop());
-        } 
+        } */
+    	
+    	
     }
 
 }
