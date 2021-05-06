@@ -64,7 +64,22 @@ public class EstruturaDeDados {
             System.out.print(pilha.pop());
         } */
     	
-    	
+    	// System.out.println(fibonacci(6));
+    	System.out.println(somaRecursiva(0));
     }
+    
+    public static int somaRecursiva(int numero) {
+    	if(numero >= 10) {
+    		return numero;
+    	}else {
+    		return somaRecursiva(numero + 1);
+    	}
+    }
+    
+    public static int fibonacci(int n) {
+   	 if(n < 1) return 0;
+   	 if(n <= 2) return 1;
+   	 return fibonacci(n - 1) + fibonacci(n - 2);
+   	}
 
 }
