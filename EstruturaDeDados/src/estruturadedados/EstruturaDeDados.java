@@ -65,7 +65,17 @@ public class EstruturaDeDados {
         } */
     	
     	// System.out.println(fibonacci(6));
-    	System.out.println(somaRecursiva(0));
+    	// System.out.println(somaRecursiva(0));
+    	
+    	BinaryTree arvore = new BinaryTree();
+    	arvore.insert(10);
+    	arvore.insert(7);
+    	arvore.insert(9);
+    	arvore.insert(11);
+    	arvore.insert(12);
+    	arvore.insert(15);
+    	System.out.println("Minimo: " + arvore.min().element);
+    	System.out.println("Maximo: " + arvore.max().element);
     }
     
     public static int somaRecursiva(int numero) {
