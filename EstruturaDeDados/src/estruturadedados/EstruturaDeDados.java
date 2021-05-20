@@ -71,11 +71,21 @@ public class EstruturaDeDados {
     	arvore.insert(10);
     	arvore.insert(7);
     	arvore.insert(9);
-    	arvore.insert(11);
     	arvore.insert(12);
+    	arvore.insert(11);
+    	arvore.insert(18);
     	arvore.insert(15);
+    	arvore.insert(28);
+    	arvore.insert(14);
     	System.out.println("Minimo: " + arvore.min().element);
     	System.out.println("Maximo: " + arvore.max().element);
+    	System.out.println("Search: " + arvore.search(12).element);
+    	arvore.inOrderTraverse();
+    	System.out.println("----------------------------");
+    	arvore.preOrderTraverse();
+    	System.out.println("----------------------------");
+    	arvore.postOrderTraverse();
+    	arvore.remove(12);
     }
     
     public static int somaRecursiva(int numero) {
