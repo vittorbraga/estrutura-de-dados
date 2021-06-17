@@ -67,7 +67,7 @@ public class EstruturaDeDados {
     	// System.out.println(fibonacci(6));
     	// System.out.println(somaRecursiva(0));
     	
-    	BinaryTree arvore = new BinaryTree();
+    	/*BinaryTree arvore = new BinaryTree();
     	arvore.insert(10);
     	arvore.insert(7);
     	arvore.insert(9);
@@ -85,7 +85,25 @@ public class EstruturaDeDados {
     	arvore.preOrderTraverse();
     	System.out.println("----------------------------");
     	arvore.postOrderTraverse();
-    	arvore.remove(12);
+    	arvore.remove(12);*/
+    	
+    	Graph grafo = new Graph();
+    	grafo.addVertex("A");
+    	grafo.addVertex("B");
+    	grafo.addVertex("C");
+    	grafo.addVertex("D");
+    	grafo.addVertex("E");
+    	grafo.addEdge("A", "B");
+    	grafo.addEdge("A", "C");
+    	grafo.addEdge("A", "E");
+    	grafo.addEdge("B", "C");
+    	grafo.addEdge("B", "A");
+    	grafo.addEdge("C", "A");
+    	grafo.addEdge("C", "B");
+    	grafo.addEdge("E", "A");
+    	grafo.addEdge("E", "D");
+    	grafo.addEdge("D", "E");
+    	System.out.println(grafo.ToString());
     }
     
     public static int somaRecursiva(int numero) {
